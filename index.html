@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 社内デモ中は検索エンジンに載せない。一般公開時に削除する -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>刻音 TOKINE — Automatic Caliber TK-01</title>
+  <meta name="description" content="刻音 TOKINE。静寂のなかで時を刻む、機械式腕時計。ブティックでの来店予約を受け付けています。">
+  <meta property="og:title" content="刻音 TOKINE">
+  <meta property="og:description" content="時を、聴く。— Automatic Caliber TK-01">
+  <meta property="og:image" content="assets/hero_tokine_v1.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ccircle cx='16' cy='7' r='2.4' fill='%23d8bf86'/%3E%3Cpath d='M10 12h12l-6 15z' fill='%23d8bf86'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+JP:wght@300;400&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <a href="#top" class="logo" aria-label="刻音 TOKINE トップへ">
+      <svg class="logo__mark" viewBox="0 0 24 32" aria-hidden="true">
+        <circle cx="12" cy="4" r="2.6"/>
+        <path d="M4 10h16L12 30z"/>
+      </svg>
+      <span class="logo__word">TOKINE</span>
+      <span class="logo__ja">刻音</span>
+    </a>
+    <nav class="site-nav" aria-label="メイン">
+      <a href="#concept">Concept</a>
+      <a href="#craft">Craft</a>
+      <a href="#movement">Movement</a>
+      <a href="#specs">Specs</a>
+    </nav>
+    <a href="#reserve" class="btn btn--small">来店予約</a>
+  </header>
+
+  <main>
+    <!-- Hero
+         本番でAI動画を用意したら .hero__media 内の <img> を以下に差し替える:
+         <video autoplay muted loop playsinline poster="assets/hero_tokine_v1.png">
+           <source src="assets/hero.webm" type="video/webm">
+           <source src="assets/hero.mp4" type="video/mp4">
+         </video>
+    -->
+    <section class="hero" aria-label="メインビジュアル">
+      <div class="hero__stage">
+        <div class="hero__media">
+          <img src="assets/hero_tokine_v1.png" alt="黒い市松模様の文字盤に金色の針とインデックスを備えた刻音 TOKINE の腕時計" fetchpriority="high">
+          <span class="glint" style="--x:57.5%;--y:23.5%;--d:0s"></span>
+          <span class="glint" style="--x:47%;--y:39.5%;--d:2.6s"></span>
+          <span class="glint" style="--x:71%;--y:14%;--d:4.1s"></span>
+          <span class="glint" style="--x:62%;--y:30%;--d:6.3s"></span>
+        </div>
+        <div class="hero__sweep" aria-hidden="true"></div>
+        <div class="hero__shade" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__copy">
+        <p class="eyebrow reveal">Automatic Caliber TK-01</p>
+        <h1 class="hero__title reveal">時を、<br>聴く。</h1>
+        <p class="hero__lead reveal">静寂のなかで、針は音を刻む。</p>
+        <a href="#reserve" class="btn reveal">ブティックで手に取る</a>
+      </div>
+
+      <a href="#concept" class="scroll-cue" aria-label="下へスクロール">
+        <span>Scroll</span><i></i>
+      </a>
+    </section>
+
+    <!-- Concept -->
+    <section class="concept section" id="concept">
+      <div class="container narrow">
+        <p class="eyebrow reveal">Concept</p>
+        <h2 class="section-title reveal">刻音、という名前。</h2>
+        <div class="concept__body">
+          <p class="reveal">時計は、目で読むものではなく、<br class="pc">耳で感じるものだったのかもしれない。</p>
+          <p class="reveal">深夜、静まり返った部屋に響く、かすかな鼓動。<br class="pc">一秒ごとに確かに進む、機械の呼吸。</p>
+          <p class="reveal">刻音は、その一瞬一瞬の音を<br class="pc">かたちにするために生まれました。</p>
+        </div>
+        <p class="concept__en reveal">“The sound of time, given form.”</p>
+      </div>
+    </section>
+
+    <!-- Craft -->
+    <section class="craft section" id="craft">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">Craftsmanship</p>
+          <h2 class="section-title reveal">細部に、宿るもの。</h2>
+        </header>
+
+        <div class="craft__grid">
+          <article class="detail reveal">
+            <div class="detail__frame">
+              <img src="assets/hero_tokine_v1.png" alt="立体的な市松模様の文字盤のクローズアップ" loading="lazy" style="--x:70%;--y:66%;--s:2.8">
+            </div>
+            <p class="detail__no">01</p>
+            <h3 class="detail__title">Checker Dial <span>市松文字盤</span></h3>
+            <p class="detail__text">一枚の文字盤に刻んだ、立体的な市松模様。見る角度によって光を拾い、漆黒がその表情を変えていきます。</p>
+          </article>
+
+          <article class="detail reveal">
+            <div class="detail__frame">
+              <img src="assets/hero_tokine_v1.png" alt="多面カットが施された金色の矢じり型インデックス" loading="lazy" style="--x:41%;--y:37%;--s:3.4">
+            </div>
+            <p class="detail__no">02</p>
+            <h3 class="detail__title">Arrow Index <span>矢じりインデックス</span></h3>
+            <p class="detail__text">一本ずつ多面カットを施したアプライドインデックス。わずかな光も鋭く跳ね返し、時を際立たせます。</p>
+          </article>
+
+          <article class="detail reveal">
+            <div class="detail__frame">
+              <img src="assets/hero_tokine_v1.png" alt="稜線を立てた金色のドーフィン針と中心部" loading="lazy" style="--x:72%;--y:48%;--s:2.5">
+            </div>
+            <p class="detail__no">03</p>
+            <h3 class="detail__title">Dauphine Hands <span>ドーフィン針</span></h3>
+            <p class="detail__text">中央に稜線を立てた二面仕上げの針。片面が光を受け、片面が影を落とす、そのコントラストが時刻を描きます。</p>
+          </article>
+
+          <article class="detail reveal">
+            <div class="detail__frame">
+              <img src="assets/hero_tokine_v1.png" alt="鏡面に磨き上げられたステンレススチールのケース" loading="lazy" style="--x:24%;--y:52%;--s:2.4">
+            </div>
+            <p class="detail__no">04</p>
+            <h3 class="detail__title">Polished Case <span>鏡面ケース</span></h3>
+            <p class="detail__text">歪みのない鏡面に仕上げた38mmケース。周囲の景色を静かに映し込み、腕元に奥行きを与えます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Movement -->
+    <section class="movement section" id="movement">
+      <div class="container movement__inner">
+        <div class="movement__visual reveal" aria-hidden="true">
+          <svg viewBox="0 0 400 400" class="caliber">
+            <circle cx="200" cy="200" r="190" class="c-line"/>
+            <circle cx="200" cy="200" r="176" class="c-line c-faint"/>
+            <g class="tick-ring">
+              <!-- 60 ticks generated by script.js -->
+            </g>
+            <g class="rotor">
+              <path d="M200 200 L60 200 A140 140 0 0 1 340 200 Z" class="c-fill"/>
+              <path d="M200 200 L82 200 A118 118 0 0 1 318 200 Z" class="c-line c-faint"/>
+            </g>
+            <g transform="translate(150 262)"><g class="gear gear--a"><circle r="38" class="c-teeth"/><circle r="30" class="c-line c-faint"/><circle r="6" class="c-dot"/></g></g>
+            <g transform="translate(254 268)"><g class="gear gear--b"><circle r="24" class="c-teeth"/><circle r="17" class="c-line c-faint"/><circle r="4" class="c-dot"/></g></g>
+            <g transform="translate(200 318)"><g class="balance"><circle r="32" class="c-line"/><path d="M-32 0H32M0 -32V32" class="c-line c-faint"/><circle r="4" class="c-dot"/></g></g>
+            <circle cx="200" cy="200" r="10" class="c-dot"/>
+          </svg>
+        </div>
+        <div class="movement__text">
+          <p class="eyebrow reveal">Movement</p>
+          <h2 class="section-title reveal">鼓動を生む、<br>Cal. TK-01。</h2>
+          <p class="reveal">腕の動きでローターが回り、ゼンマイを巻き上げる自動巻きムーブメント。毎時28,800振動のテンプが、一秒を八つに刻みます。</p>
+          <dl class="stats reveal">
+            <div><dt>Frequency</dt><dd>28,800<small>vph</small></dd></div>
+            <div><dt>Power Reserve</dt><dd>50<small>hours</small></dd></div>
+            <div><dt>Jewels</dt><dd>24<small>pcs</small></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs -->
+    <section class="specs section" id="specs">
+      <div class="container narrow">
+        <header class="section-head">
+          <p class="eyebrow reveal">Specifications</p>
+          <h2 class="section-title reveal">TOKINE Ref. TK-1957</h2>
+        </header>
+        <dl class="spec-list reveal">
+          <div><dt>ムーブメント</dt><dd>自動巻き Cal. TK-01</dd></div>
+          <div><dt>ケース径</dt><dd>38.0 mm</dd></div>
+          <div><dt>ケース厚</dt><dd>11.2 mm</dd></div>
+          <div><dt>ケース素材</dt><dd>ステンレススチール（鏡面仕上げ）</dd></div>
+          <div><dt>風防</dt><dd>ボックス型サファイアクリスタル（内面無反射コーティング）</dd></div>
+          <div><dt>文字盤</dt><dd>ブラック 市松模様／アプライドインデックス</dd></div>
+          <div><dt>防水</dt><dd>日常生活用強化防水（5気圧）</dd></div>
+          <div><dt>ストラップ</dt><dd>ブラック カーフレザー</dd></div>
+          <div><dt>価格</dt><dd>¥385,000（税込）</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Reserve -->
+    <section class="reserve section" id="reserve">
+      <div class="container reserve__inner">
+        <div class="reserve__info">
+          <p class="eyebrow reveal">Boutique Reservation</p>
+          <h2 class="section-title reveal">その重みを、<br>腕で確かめる。</h2>
+          <p class="reveal">光の移ろい、針の運び、腕に載せたときの重さ。写真では伝えきれないすべてを、ブティックでご体感ください。専任のスタッフがご案内いたします。</p>
+          <div class="boutique reveal">
+            <p class="boutique__name">刻音 銀座ブティック</p>
+            <p>東京都中央区銀座 ◯-◯-◯</p>
+            <p>11:00 – 20:00（水曜定休）</p>
+          </div>
+        </div>
+
+        <form class="reserve__form reveal" id="reserve-form" novalidate>
+          <div class="field">
+            <label for="f-name">お名前</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">メールアドレス</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-date">ご希望日</label>
+              <input id="f-date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="f-time">ご希望時間</label>
+              <select id="f-time" name="time" required>
+                <option value="">選択してください</option>
+                <option>11:00</option><option>13:00</option><option>15:00</option>
+                <option>17:00</option><option>19:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg">ご要望（任意）</label>
+            <textarea id="f-msg" name="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn--full">予約を申し込む</button>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--footer" aria-label="トップへ戻る">
+        <svg class="logo__mark" viewBox="0 0 24 32" aria-hidden="true"><circle cx="12" cy="4" r="2.6"/><path d="M4 10h16L12 30z"/></svg>
+        <span class="logo__word">TOKINE</span>
+      </a>
+      <p class="footer__note">本サイトは架空のブランドによるデモサイトです。実在の商品・店舗とは関係ありません。</p>
+      <p class="footer__copy">© 2026 TOKINE</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
